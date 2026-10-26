@@ -88,4 +88,4 @@ Variables optionnelles :
 ---
 
 ## Auteur
-Projet conçu et développé dans le cadre du portfolio de solutions web par **Tariq Abala**.
+Développé par **Tariq Abala** d'une manière professionnelle.
