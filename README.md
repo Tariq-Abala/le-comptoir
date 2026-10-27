@@ -1,94 +1,96 @@
-# Le Comptoir — Bistro & Gastronomie d'Auteur
+# Le Comptoir — Bistro & Terroir d'Auteur
 
-Site web vitrine et système de réservation de tables pour un bistro gastronomique à Casablanca (Quartier Gauthier).
+Application web complète, moderne et responsive pour un restaurant bistronomique haut de gamme à Casablanca (Quartier Gauthier).
 
-## Présentation du Projet
-Le Comptoir est une application web élégante inspirée de l'art de vivre bistronomique. Elle permet aux clients de consulter la carte des saisons avec filtres par catégorie (entrées, plats signatures, viandes, marée, desserts, mocktails), de découvrir l'histoire du chef et des producteurs du terroir, et d'effectuer une réservation de table en direct avec choix d'ambiance (salle feutrée, terrasse végétalisée, salon VIP).
-
-### Fonctionnalités Clés
-- **Esthétique Chaleureuse & Boisée** : Fond anthracite profond (`#0C0A09`), reflets ambrés cuivrés (`#D97706`), typographie avec empattements soignée.
-- **Carte des Saisons Interactive** : Navigation fluide par types de mets avec tags de provenance (Safran de Taliouine, Agneau de l'Atlas, etc.), labels végétariens et prix en Dirhams marocains.
-- **Système de Réservation de Table** : Sélection du service (déjeuner / dîner), du nombre de convives, de la date, du créneau et de l'espace de dégustation avec génération de numéro de réservation unique (`LC-XXXX`).
-- **Accessibilité Mobile & Contact Rapide** : Appels téléphoniques en 1 clic, réservation WhatsApp directe et informations sur le service voiturier.
-
-## Technologies Utilisées
-- **Framework** : [Next.js](https://nextjs.org/) (App Router)
-- **UI & Rendu** : [React](https://react.dev/) & [TypeScript](https://www.typescriptlang.org/)
-- **Styles** : [Tailwind CSS](https://tailwindcss.com/)
-- **Icônes** : [Lucide React](https://lucide.dev/)
+Repository GitHub : [https://github.com/Tariq-Abala/le-comptoir](https://github.com/Tariq-Abala/le-comptoir)
 
 ---
 
-## Installation & Démarrage Local
+## 🍽️ Présentation & Direction Artistique
 
-### Prérequis
-- Node.js version 18.18+ ou 20+
-- npm version 9+
+Le Comptoir adopte une identité visuelle chaleureuse, lumineuse et accueillante inspirée des plus beaux bistrots contemporains méditerranéens et parisiens :
+- **Palette Lumineuse & Solaire** : Fonds ivoire chaud (`#FAF9F5`), crème et blanc pur, avec des touches subtiles de terracotta (`#C06041`) et de vert sauge / olive (`#5A6B47`). Aucun thème noir ou sombre prédominant.
+- **Typographie Éditoriale & Raffinée** : Titres en serif noble associés à un sans-serif moderne, aéré et parfaitement lisible.
+- **Photographies Culinaires Réelles & Locales** : 13 photographies haute résolution hébergées localement dans `public/images/` pour un rendu instantané et sans dépendance externe.
+- **Expérience Utilisateur Complète & Responsive** : Navigation fluide, panier à emporter / WhatsApp synchronisé, modal détaillée de plat, formulaire de réservation validé et mentions légales complètes.
 
-### 1. Installation des Dépendances
+---
+
+## ✨ Fonctionnalités Clés & Pages Développées
+
+1. **Page d'Accueil (`/`)** :
+   - Hero section avec grande photographie de table garnie, proposition de valeur et double CTA.
+   - 3 piliers d'engagement : Terroirs locaux, cuisine ouverte et confort de la salle.
+   - Présentation éditoriale de la carte avec onglets de catégories et cartes visuelles.
+   - Découverte des atmosphères (Salle feutrée aux arches, Terrasse végétale ombragée, Cuisine ouverte).
+   - Formulaire interactif de réservation et informations pratiques d'accès.
+
+2. **La Carte & Menu (`/menu`)** :
+   - Filtrage instantané par catégorie : Toute la carte, Entrées gourmandes, Plats signatures, Burgers & sandwiches, Douceurs, Mocktails botaniques.
+   - Barre de recherche en temps réel par mot-clé (truffe, burrata, saumon, agneau...).
+   - Filtres de régimes alimentaires : Végétarien (VG), Sans Gluten (GF), Terroir Bio, Signature du Chef.
+   - Prix transparents affichés en Dirhams marocains (MAD TTC).
+
+3. **Vue Détaillée des Plats (`DishDetailModal`)** :
+   - Photographie grand format, composition détaillée des ingrédients, origine du terroir (Taounate, Taliouine, Essaouira, Moyen Atlas), accords boissons suggérés, sélecteur de quantité et ajout direct au panier.
+
+4. **Panier à Emporter & Commande WhatsApp (`CartDrawer`)** :
+   - Tiroir latéral de commande calculant le sous-total et le total net TTC.
+   - Précision du nom du client, de l'heure de retrait et des remarques culinaires.
+   - Bouton de transmission instantané ouvrant WhatsApp avec un message préformaté comprenant la liste des plats, quantités et total.
+
+5. **Réservation de Table (`/reservation`)** :
+   - Sélection du service (Déjeuner / Dîner), date, horaire, nombre de convives (1 à 12 personnes) et espace de dégustation.
+   - Validation stricte des coordonnées.
+   - Génération d'un bon d'accueil VIP avec référence unique (`LC-XXXX`) et avis transparent de démonstration conforme aux bonnes pratiques de portfolio.
+
+6. **Notre Histoire & Producteurs (`/histoire`)** :
+   - Parcours de la brigade, démarche d'approvisionnement en circuits courts et architecture minérale du restaurant.
+
+7. **Galerie Photos (`/galerie`)** :
+   - Grille de clichés haute définition avec filtres thématiques et lightbox zoom plein écran.
+
+8. **Contact & Accès (`/contact`)** :
+   - Coordonnées directes, horaires d'ouverture, service voiturier gratuit, formulaire de contact et lien WhatsApp.
+
+9. **Foire Aux Questions (`/faq`)** :
+   - Accordéon interactif couvrant les réservations, la certification Halal, les intolérances alimentaires et le stationnement.
+
+10. **Cadre Légal & Confidentialité (`/mentions-legales` & `/confidentialite`)** :
+    - Données d'immatriculation d'entreprise éditables et conformité avec la Loi marocaine 09-08 (CNDP).
+
+---
+
+## 🛠️ Stack Technique
+
+- **Framework** : [Next.js 16](https://nextjs.org/) (App Router, Turbopack)
+- **UI & Rendu** : [React 19](https://react.dev/) & [TypeScript 5](https://www.typescriptlang.org/)
+- **Styles** : [Tailwind CSS 4](https://tailwindcss.com/)
+- **Icônes** : [Lucide React](https://lucide.dev/)
+- **Assets** : Photographies haute résolution optimisées stockées dans `public/images/`
+
+---
+
+## 🚀 Installation & Lancement Local
+
 ```bash
+# 1. Dépendances
 npm install
-```
 
-### 2. Démarrer le Serveur Local
-```bash
+# 2. Serveur de développement local
 npm run dev
-```
-Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur.
 
-### 3. Compiler pour la Production
-```bash
+# 3. Compilation de production
 npm run build
-```
 
-### 4. Lancer la Version Compilée
-```bash
+# 4. Lancement de la version compilée
 npm run start
 ```
 
 ---
 
-## Déploiement Indépendant
-
-### Option A : Dépôt GitHub Séparé (Recommandé)
-
-1. Initialisez un nouveau dépôt Git dans ce dossier :
-   ```bash
-   cd le-comptoir
-   git init
-   git add .
-   git commit -m "feat: initial commit of Le Comptoir project"
-   ```
-2. Créez un nouveau dépôt public ou privé sur GitHub nommé `le-comptoir` :
-   ```bash
-   git remote add origin https://github.com/VOTRE_NOM_UTILISATEUR/le-comptoir.git
-   git branch -M main
-   git push -u origin main
-   ```
-3. Connectez-vous sur [Vercel](https://vercel.com/) :
-   - Cliquez sur **Add New...** > **Project**
-   - Importez le dépôt `le-comptoir`
-   - Le framework Next.js est automatiquement détecté
-   - Cliquez sur **Deploy**
-
-### Option B : Déploiement Monorepo (depuis le dossier racine)
-Si vous conservez tous les projets dans un seul dépôt :
-- Sur Vercel, définissez **Root Directory** sur `le-comptoir`.
-- Les scripts de build et d'installation fonctionneront automatiquement.
-
----
-
-## Variables d'Environnement
-Ce projet ne requiert aucune variable d'environnement obligatoire pour fonctionner.
-
-Variables optionnelles :
-- `NEXT_PUBLIC_RESTAURANT_PHONE` (Optionnel) : Numéro d'appel téléphonique.
-- `NEXT_PUBLIC_WHATSAPP_NUMBER` (Optionnel) : Numéro pour les réservations WhatsApp.
-
----
-
-## Auteur & Copyright
-Développé par [**Tariq Abala**](https://tariqabala.com) — Web Development & Digital Solutions.
+## 📄 Auteur & Copyright
+Développé par [**Tariq Abala**](https://tariqabala.com) — Web Development & Digital Solutions.  
 *Professional Websites • Business Applications • Custom Admin Panels*
 
 © 2026 TARIQ ABALA. Tous droits réservés.
