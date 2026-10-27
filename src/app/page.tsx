@@ -675,16 +675,33 @@ export default function LeComptoirPage() {
               </div>
             </div>
 
-            <div className={`text-xs text-center md:text-right ${isDarkMode ? "text-[#A8A29E]" : "text-[#57534E]"}`}>
-              <p className="font-semibold text-stone-900 dark:text-white">Développé par Tariq Abala d&apos;une manière professionnelle</p>
-              <p className="mt-1 text-stone-400 font-mono text-[10px]">
-                Stack : Next.js 16 • React 19 • Tailwind CSS • TypeScript
+            <div className={`text-xs text-center md:text-right space-y-1 ${isDarkMode ? "text-[#A8A29E]" : "text-[#57534E]"}`}>
+              <p className="font-semibold text-stone-900 dark:text-white">
+                Développé par{" "}
+                <a
+                  href="https://tariqabala.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-amber-600 dark:text-amber-400 hover:underline font-bold"
+                >
+                  Tariq Abala
+                </a>
+              </p>
+              <p className="text-[11px] font-medium text-stone-700 dark:text-stone-300">
+                Web Development &amp; Digital Solutions
+              </p>
+              <p className="text-[10px] text-stone-400 font-mono">
+                Professional Websites • Business Applications • Custom Admin Panels
               </p>
             </div>
           </div>
 
           <div className="mt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
-            <p>© 2026 Le Comptoir Bistro. Tous droits réservés.</p>
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="font-semibold text-stone-700 dark:text-stone-300">© 2026 TARIQ ABALA. Tous droits réservés.</span>
+              <span className="text-stone-400">•</span>
+              <span>Le Comptoir Bistro Casablanca</span>
+            </div>
             <div className="flex gap-6">
               <a href="#menu" className="hover:text-stone-900 dark:hover:text-stone-300">La Carte</a>
               <a href="#reserver" className="hover:text-stone-900 dark:hover:text-stone-300">Réservations</a>
